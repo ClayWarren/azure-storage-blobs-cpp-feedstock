@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 3.20)
-project(azure_blobs_consumer LANGUAGES CXX)
-find_package(azure-storage-blobs-cpp CONFIG REQUIRED)
-add_executable(azure_blobs_consumer main.cpp)
-target_link_libraries(azure_blobs_consumer PRIVATE Azure::azure-storage-blobs)
